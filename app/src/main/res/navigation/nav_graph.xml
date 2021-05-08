@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashScreen">
+
+    <fragment
+        android:id="@+id/harcama_ekle"
+        android:name="com.tecimenes.harcamatakip.harcama_ekle"
+        android:label="fragment_harcama_ekle"
+        tools:layout="@layout/fragment_harcama_ekle" >
+        <action
+            android:id="@+id/action_harcama_ekle_to_ana_sayfa"
+            app:destination="@id/ana_sayfa"
+            app:popUpTo="@id/ana_sayfa"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/harcama_sil"
+        android:name="com.tecimenes.harcamatakip.harcama_sil"
+        android:label="fragment_harcama_sil"
+        tools:layout="@layout/fragment_harcama_sil" >
+        <action
+            android:id="@+id/action_harcama_sil_to_ana_sayfa"
+            app:destination="@id/ana_sayfa"
+            app:popUpTo="@id/ana_sayfa"
+            app:popUpToInclusive="true"/>
+        <argument
+            android:name="secilenHarcama"
+            app:argType="com.tecimenes.harcamatakip.database.Harcama" />
+        <argument
+            android:name="secilenHarcamaTuru"
+            app:argType="integer"
+            android:defaultValue="1" />
+    </fragment>
+    <fragment
+        android:id="@+id/isim_degistir"
+        android:name="com.tecimenes.harcamatakip.isim_degistir"
+        android:label="fragment_isim_degistir"
+        tools:layout="@layout/fragment_isim_degistir" >
+        <action
+            android:id="@+id/action_isim_degistir_to_ana_sayfa"
+            app:destination="@id/ana_sayfa"
+            app:popUpTo="@id/ana_sayfa"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/ana_sayfa"
+        android:name="com.tecimenes.harcamatakip.homepage.ana_sayfa"
+        android:label="fragment_ana_sayfa"
+        tools:layout="@layout/fragment_ana_sayfa" >
+        <action
+            android:id="@+id/action_ana_sayfa_to_harcama_sil"
+            app:destination="@id/harcama_sil" />
+        <action
+            android:id="@+id/action_ana_sayfa_to_harcama_ekle"
+            app:destination="@id/harcama_ekle" />
+        <action
+            android:id="@+id/action_ana_sayfa_to_isim_degistir"
+            app:destination="@id/isim_degistir" />
+        <argument
+            android:name="dovizArg"
+            app:argType="integer"
+            android:defaultValue="1" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="com.tecimenes.harcamatakip.opening.SplashScreen"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreen_to_ana_sayfa"
+            app:destination="@id/ana_sayfa"
+            app:popUpTo="@id/splashScreen"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_splashScreen_to_OScreen"
+            app:destination="@id/OScreen"
+            app:popUpTo="@id/splashScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/OScreen"
+        android:name="com.tecimenes.harcamatakip.opening.OScreen"
+        android:label="fragment_o_screen"
+        tools:layout="@layout/fragment_o_screen" >
+        <action
+            android:id="@+id/action_OScreen_to_ana_sayfa"
+            app:destination="@id/ana_sayfa"
+            app:popUpTo="@id/OScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

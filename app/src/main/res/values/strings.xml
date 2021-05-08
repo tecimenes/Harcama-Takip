@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Harcama Takip</string>
+    <string name="tl">TL</string>
+    <string name="sterlin">STERLIN</string>
+    <string name="euro">EURO</string>
+    <string name="dolar">DOLAR</string>
+    <string name="aciklama">Açıklama</string>
+    <string name="harcama">Harcama</string>
+    <string name="harcama_ekle">Harcama Ekle</string>
+    <string name="fatura">Fatura</string>
+    <string name="kira">Kira</string>
+    <string name="diger">Diğer</string>
+    <string name="isim_degistir">İsim Değiştir</string>
+    <string name="ekle">Ekle</string>
+    <string name="harcama_sil">Harcama Sil</string>
+    <string name="sil">sil</string>
+    <string name="isim_deg_isminizi_giriniz">İsminizi Giriniz</string>
+    <string name="erkek">Erkek</string>
+    <string name="kadin">Kadın</string>
+    <string name="belirtmek_istemiyorum">Belirtmek İstemiyorum</string>
+    <string name="kaydet">Kaydet</string>
+    <string name="atla">Atla</string>
+    <string name="bitir">Bitir</string>
+    <string name="os2_head">Kolayca Kategorilendir</string>
+    <string name="os2_text">Harcamalarınızı kategorize ederek daha kolay takip edin</string>
+    <string name="os3_head">Farklı Para Birimleriyle Takip Et</string>
+    <string name="os3_text">Harcamalarınızı TL, Dolar, Euro, Sterlin ve Zloty birimleriyle sürekli güncellenen kur değerleriyle takip edin!</string>
+    <string name="os1_head">Karşınızda Harcama Takip</string>
+    <string name="os1_text">Artık karışıklığa son!</string>
+    <string name="zloty">ZLOTY</string>
+    <string name="merhaba">Merhaba</string>
+    <string name="harcama_tutari">Harcama Tutarı</string>
+    <string name="harcama_turu">Harcamanızın Türünü Seçiniz:</string>
+    <string name="harcama_para_simgesi">Harcamanızın Para Biriminin Simgesini Seçiniz:</string>
+    <string name="TL_simgesi">₺</string>
+    <string name="dolar_simgesi">$</string>
+    <string name="euro_simgesi">€</string>
+    <string name="pound_simgesi">£</string>
+    <string name="zloty_simgesi">zł</string>
+    <string name="todo">TODO</string>
+
+</resources>
